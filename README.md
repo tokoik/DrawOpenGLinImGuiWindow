@@ -90,10 +90,16 @@
 
     // ImGui のフレームに一つ目の ImGui のウィンドウを作成する
     ImGui::Begin("Control panel");
+
+    // FPS など表示してみたりする
     ImGui::Text("Frame rate: %6.2f fps", ImGui::GetIO().Framerate);
+
+    // スライダでオイラー角を設定する
     ImGui::SliderAngle("Roll", &roll);
     ImGui::SliderAngle("Pitch", &pitch);
     ImGui::SliderAngle("Yaw", &yaw);
+
+    // Quit ボタンのクリックでループを抜けるようにする
     if (ImGui::Button("Quit")) window.setClose();
 ```
 
@@ -159,31 +165,37 @@ Dear ImGui のフレームへの描画を完了します。
     ImGui::Render();
 ```
 
-この処理で、このような表示になります。
+この処理で次のような表示になります。
 
 ![一つのウィンドウに描画する場合](images/image1.png "一つのウィンドウに描画する場合")
 
 ### 別のウィンドウに描く
 
-ウィンドウを分けて描くこともできます。最初のユーザインタフェースを描画したところで一旦 Dear ImGui のウィンドウの作成を終了し、
+ウィンドウを分けて描くこともできます。最初のユーザインタフェースを描画したところで、一旦、Dear ImGui のウィンドウの作成を終了し、
 
 ```cpp
     // ImGui のフレームに一つ目の ImGui のウィンドウを作成する
     ImGui::Begin("Control panel");
+
+    // FPS など表示してみたりする
     ImGui::Text("Frame rate: %6.2f fps", ImGui::GetIO().Framerate);
+
+    // スライダでオイラー角を設定する
     ImGui::SliderAngle("Roll", &roll);
     ImGui::SliderAngle("Pitch", &pitch);
     ImGui::SliderAngle("Yaw", &yaw);
+
+    // Quit ボタンのクリックでループを抜けるようにする
     if (ImGui::Button("Quit")) window.setClose();
 
-    // ImGui のウィンドウの作成を終了する
+    // 【追加】ImGui のウィンドウの作成を終了する
     ImGui::End();
 ```
 
-別のウィンドウで `ImGui::Image()` を実行して、`cb` のテクスチャを描画します。
+`ImGui::Image()` を別のウィンドウで実行するようにして、`cb` のテクスチャを描画します。
 
 ```cpp
-    // ImGui のフレームに二つの ImGui のウィンドウを作成する
+    // 【追加】ImGui のフレームに二つの ImGui のウィンドウを作成する
     ImGui::Begin("OpenGL");
 
     // テクスチャを ImGui のウィンドウに描く
@@ -193,6 +205,6 @@ Dear ImGui のフレームへの描画を完了します。
     ImGui::End();
 ```
 
-この場合は、次のような表示になります。
+この場合は次のような表示になります。
 
 ![別のウィンドウに描画する場合](images/image2.png "別のウィンドウに描画する場合")

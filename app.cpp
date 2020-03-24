@@ -127,10 +127,16 @@ void app()
 
     // ImGui のフレームに一つ目の ImGui のウィンドウを作成する
     ImGui::Begin("Control panel");
+
+    // FPS など表示してみたりする
     ImGui::Text("Frame rate: %6.2f fps", ImGui::GetIO().Framerate);
+
+    // スライダでオイラー角を設定する
     ImGui::SliderAngle("Roll", &roll);
     ImGui::SliderAngle("Pitch", &pitch);
     ImGui::SliderAngle("Yaw", &yaw);
+
+    // Quit ボタンのクリックでループを抜けるようにする
     if (ImGui::Button("Quit")) window.setClose();
 
     // ImGui のウィンドウの作成を終了する
