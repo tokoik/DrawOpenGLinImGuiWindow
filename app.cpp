@@ -125,13 +125,15 @@ void app()
     // ImGui のフレームを準備する
     ImGui::NewFrame();
 
-    // ImGui のフレームに一つ目の ImGui のウィンドウを描く
+    // ImGui のフレームに一つ目の ImGui のウィンドウを作成する
     ImGui::Begin("Control panel");
     ImGui::Text("Frame rate: %6.2f fps", ImGui::GetIO().Framerate);
     ImGui::SliderAngle("Roll", &roll);
     ImGui::SliderAngle("Pitch", &pitch);
     ImGui::SliderAngle("Yaw", &yaw);
     if (ImGui::Button("Quit")) window.setClose();
+
+    // ImGui のウィンドウの作成を終了する
     ImGui::End();
 
     // モデル変換行列にオイラー角を乗じる
@@ -170,9 +172,13 @@ void app()
     // ビューポートを復帰する
     window.resetViewport();
 
-    // ImGui のフレームに一つ目の ImGui のウィンドウを描く
+    // ImGui のフレームに二つ目の ImGui のウィンドウを作成する
     ImGui::Begin("OpenGL");
+    
+    // テクスチャを ImGui のウィンドウに描く
     ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight));
+
+    // ImGui のウィンドウの作成を終了する
     ImGui::End();
 
     // ImGui のフレームに描画する
