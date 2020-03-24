@@ -155,11 +155,18 @@
     <ClInclude Include="gg.h" />
     <ClInclude Include="include\imconfig.h" />
     <ClInclude Include="include\imgui.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="simple.frag" />
     <None Include="simple.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DrawOpenLGLinImGuiWindow.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="gg.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
