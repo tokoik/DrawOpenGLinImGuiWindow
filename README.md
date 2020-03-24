@@ -4,7 +4,7 @@
 
 ## 宿題フレームワーク
 
-私は[授業](http://web.wakayama-u.ac.jp/~tokoi/lecture/gg/)の宿題の雛形を [GLFW](https://www.glfw.org/) ベースで作っているのですが、これには多少なりとも（授業内容とは関係ない）コード量を減らすために、自前のフレームワークを用意していたりします。ただ、これには今まで GUI が全くついていませんでした。それで、これに Dear ImGui を[組み込めるようにした](https://github.com/tokoik/ggsample01)のですが、
+私は[授業](http://web.wakayama-u.ac.jp/~tokoi/lecture/gg/)の宿題の雛形を [GLFW](https://www.glfw.org/) ベースで作っているのですが、これは多少なりとも（授業内容とは関係ない）コード量を減らすために、自前のフレームワークを使っていたりします。しかし、このフレームワークには今まで GUI が全くついていませんでした。それで、先日これに Dear ImGui を[組み込めるようにした](https://github.com/tokoik/ggsample01)のですが、
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">imguiの中のウィンドウでOpenGLの描画をするようなサンプルはまだ存在していなさそうなので、用意していただけるとありがたいです。<br>おそらくリソースを割く価値はあると思います</p>&mdash; 土鍋 (@ssaattwworg) <a href="https://twitter.com/ssaattwworg/status/1211843637534806016?ref_src=twsrc%5Etfw">December 31, 2019</a></blockquote>
 
@@ -116,7 +116,7 @@
     simple.use(mp, mv * mm, lightBuffer);
 ```
 
-OpenGL の描画処理（ドローコール）の前に、FBO を指定します。ビューポートは FBO に使ったテクスチャのサイズと一致させます。画面クリアには `glClear()` を使っても構わないのですが、気分的にここでは `glClearColor()` を使いたくなかったので、`glClearBuffer()` で画面 (FBO) を消去します。なお、画面クリアの色のアルファ値を 0 より大きくしないと、描画結果が見えません（少し悩みました）。
+OpenGL の描画処理（ドローコール）の前に、FBO を指定します。ビューポートは FBO に使ったテクスチャのサイズと一致させます。画面クリアには `glClear()` を使っても構わないのですが、気分的にここでは `glClearColor()` を使いたくなかったので、`glClearBuffer()` で画面 (FBO) を消去します。なお、画面クリアの色のアルファ値を 0 より大きくしないと、背景色が見えません（少し悩みました）。
 
 ```cpp
     // フレームバッファオブジェクトを結合する
