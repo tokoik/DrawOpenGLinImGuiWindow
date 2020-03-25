@@ -148,11 +148,11 @@ OpenGL の描画処理（ドローコール）の前に、FBO を指定します
     window.resetViewport();
 ```
 
-レンダリング結果のテクスチャが `cb` に入っていますから、これを `ImGui::Image()` で描画します。
+レンダリング結果のテクスチャが `cb` に入っていますから、これを `ImGui::Image()` で描画します。この第3、第4引数は描画するテクスチャの範囲です。これら省略してデフォルト引数を使ってしまうと図形の上下が反転してしまうので、左下が原点となるように、第3引数に `ImVec2(0, 1)`、第4引数に `ImVec2(1, 0)` を指定して、y 方向の範囲を反転します。
 
 ```cpp
     // テクスチャを ImGui のウィンドウに描く
-    ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight));
+    ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight), ImVec2(0, 1), ImVec2(1, 0));
 ```
 
 Dear ImGui のフレームへの描画を完了します。
@@ -199,7 +199,7 @@ Dear ImGui のフレームへの描画を完了します。
     ImGui::Begin("OpenGL");
 
     // テクスチャを ImGui のウィンドウに描く
-    ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight));
+    ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight), ImVec2(0, 1), ImVec2(1, 0));
 
     // ImGui のウィンドウの作成を終了する
     ImGui::End();

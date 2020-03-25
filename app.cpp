@@ -182,7 +182,7 @@ void app()
     ImGui::Begin("OpenGL");
 
     // テクスチャを ImGui のウィンドウに描く
-    ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight));
+    ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight), ImVec2(0, 1), ImVec2(1, 0));
 
     // ImGui のウィンドウの作成を終了する
     ImGui::End();
