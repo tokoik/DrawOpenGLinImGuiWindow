@@ -1,7 +1,7 @@
 #
 # for Linux
 #
-DrawOpenLGLinImGuiWindow
+DrawOpenGLinImGuiWindow
 a.out
 core
 *.o
