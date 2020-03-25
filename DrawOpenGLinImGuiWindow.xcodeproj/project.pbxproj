@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7D1E90EE1123E36C005E6C75 /* DrawOpenLGLinImGuiWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawOpenLGLinImGuiWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1E90EE1123E36C005E6C75 /* DrawOpenGLinImGuiWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawOpenGLinImGuiWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1E90F11123E36C005E6C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D24C83614F8F3A700C23BB6 /* gg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = gg.cpp; sourceTree = "<group>"; };
 		7D24C83714F8F3A700C23BB6 /* gg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = gg.h; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		7DAF9071240F5D2D001E5CE2 /* logo.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = logo.obj; sourceTree = "<group>"; };
 		7DAF9072240F5D2D001E5CE2 /* logo.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = logo.mtl; sourceTree = "<group>"; };
 		7DDCB0F723EDA73D007C2AD3 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
-		7DDCB0F923EDBFD5007C2AD3 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = app.cpp; path = /Users/tokoi/Documents/Projects/DrawOpenLGLinImGuiWindow/app.cpp; sourceTree = "<absolute>"; };
+		7DDCB0F923EDBFD5007C2AD3 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = app.cpp; path = /Users/tokoi/Documents/Projects/DrawOpenGLinImGuiWindow/app.cpp; sourceTree = "<absolute>"; };
 		7DF4DDCD23EF0E40005D4BCB /* imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_opengl3.cpp; path = lib/imgui_impl_opengl3.cpp; sourceTree = "<group>"; };
 		7DF4DDCE23EF0E40005D4BCB /* imgui_impl_glfw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_glfw.cpp; path = lib/imgui_impl_glfw.cpp; sourceTree = "<group>"; };
 		7DF4DDCF23EF0E40005D4BCB /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_widgets.cpp; path = lib/imgui_widgets.cpp; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		7D1E90EF1123E36C005E6C75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D1E90EE1123E36C005E6C75 /* DrawOpenLGLinImGuiWindow.app */,
+				7D1E90EE1123E36C005E6C75 /* DrawOpenGLinImGuiWindow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D1E90ED1123E36C005E6C75 /* DrawOpenLGLinImGuiWindow */ = {
+		7D1E90ED1123E36C005E6C75 /* DrawOpenGLinImGuiWindow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D1E90F41123E36D005E6C75 /* Build configuration list for PBXNativeTarget "DrawOpenLGLinImGuiWindow" */;
+			buildConfigurationList = 7D1E90F41123E36D005E6C75 /* Build configuration list for PBXNativeTarget "DrawOpenGLinImGuiWindow" */;
 			buildPhases = (
 				7D1E90EA1123E36C005E6C75 /* Resources */,
 				7D1E90EB1123E36C005E6C75 /* Sources */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = DrawOpenLGLinImGuiWindow;
-			productName = DrawOpenLGLinImGuiWindow;
-			productReference = 7D1E90EE1123E36C005E6C75 /* DrawOpenLGLinImGuiWindow.app */;
+			name = DrawOpenGLinImGuiWindow;
+			productName = DrawOpenGLinImGuiWindow;
+			productReference = 7D1E90EE1123E36C005E6C75 /* DrawOpenGLinImGuiWindow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +112,7 @@
 			attributes = {
 				LastUpgradeCheck = 1130;
 			};
-			buildConfigurationList = 7D1E90DD1123E2F7005E6C75 /* Build configuration list for PBXProject "DrawOpenLGLinImGuiWindow" */;
+			buildConfigurationList = 7D1E90DD1123E2F7005E6C75 /* Build configuration list for PBXProject "DrawOpenGLinImGuiWindow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D1E90ED1123E36C005E6C75 /* DrawOpenLGLinImGuiWindow */,
+				7D1E90ED1123E36C005E6C75 /* DrawOpenGLinImGuiWindow */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +268,7 @@
 					Cocoa,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = DrawOpenLGLinImGuiWindow;
+				PRODUCT_NAME = DrawOpenGLinImGuiWindow;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -304,7 +304,7 @@
 					Cocoa,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:identifier}";
-				PRODUCT_NAME = DrawOpenLGLinImGuiWindow;
+				PRODUCT_NAME = DrawOpenGLinImGuiWindow;
 				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7D1E90DD1123E2F7005E6C75 /* Build configuration list for PBXProject "DrawOpenLGLinImGuiWindow" */ = {
+		7D1E90DD1123E2F7005E6C75 /* Build configuration list for PBXProject "DrawOpenGLinImGuiWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D1E90DB1123E2F7005E6C75 /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D1E90F41123E36D005E6C75 /* Build configuration list for PBXNativeTarget "DrawOpenLGLinImGuiWindow" */ = {
+		7D1E90F41123E36D005E6C75 /* Build configuration list for PBXNativeTarget "DrawOpenGLinImGuiWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D1E90F21123E36D005E6C75 /* Debug */,

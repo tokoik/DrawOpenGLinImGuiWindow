@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/tokoi/Documents/Projects/DrawOpenLGLinImGuiWindow/DrawOpenLGLinImGuiWindow.cpp">
+      location = "group:/Users/tokoi/Documents/Projects/DrawOpenGLinImGuiWindow/DrawOpenGLinImGuiWindow.cpp">
    </FileRef>
    <FileRef
       location = "self:">

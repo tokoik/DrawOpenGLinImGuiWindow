@@ -23,7 +23,7 @@ constexpr int fboHeight(300); // フレームバッファオブジェクトの�
 void app()
 {
   // ウィンドウを作成する
-  Window window("DrawOpenLGLinImGuiWindow");
+  Window window("DrawOpenGLinImGuiWindow");
 
   // シェーダを作成する
   const GgSimpleShader simple("simple.vert", "simple.frag");
@@ -180,7 +180,7 @@ void app()
 
     // ImGui のフレームに二つ目の ImGui のウィンドウを作成する
     ImGui::Begin("OpenGL");
-    
+
     // テクスチャを ImGui のウィンドウに描く
     ImGui::Image((void*)(intptr_t)cb, ImVec2(fboWidth, fboHeight));
 

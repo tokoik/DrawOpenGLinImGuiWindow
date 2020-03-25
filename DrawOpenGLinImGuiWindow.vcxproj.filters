@@ -69,7 +69,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="DrawOpenLGLinImGuiWindow.rc">
+    <ResourceCompile Include="DrawOpenGLinImGuiWindow.rc">
       <Filter>リソース ファイル</Filter>
     </ResourceCompile>
   </ItemGroup>
