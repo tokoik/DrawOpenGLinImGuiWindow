@@ -4,7 +4,7 @@
 
 ## 宿題の補助プログラム
 
-私は[授業](http://web.wakayama-u.ac.jp/~tokoi/lecture/gg/)の宿題の雛形を [GLFW](https://www.glfw.org/) ベースで作っているのですが、これには多少なりとも（授業内容とは関係ない）コード量を減らすために、さらに自前の補助プログラムを追加しいたりします。しかし、この補助プログラムには今まで GUI が全くついていませんでした。それで、先日これに Dear ImGui を[組み込めるようにした](https://github.com/tokoik/ggsample01)のですが、
+私は[授業](http://web.wakayama-u.ac.jp/~tokoi/lecture/gg/)の宿題の雛形を [GLFW](https://www.glfw.org/) ベースで作っているのですが、これには多少なりとも（授業内容とは関係ない）コード量を減らすために、さらに自前の補助プログラムを追加していたりします。しかし、この補助プログラムには今まで GUI が全くついていませんでした。それで、先日これに Dear ImGui を[組み込めるようにした](https://github.com/tokoik/ggsample01)のですが、
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">imguiの中のウィンドウでOpenGLの描画をするようなサンプルはまだ存在していなさそうなので、用意していただけるとありがたいです。<br>おそらくリソースを割く価値はあると思います</p>&mdash; 土鍋 (@ssaattwworg) <a href="https://twitter.com/ssaattwworg/status/1211843637534806016?ref_src=twsrc%5Etfw">December 31, 2019</a></blockquote>
 
@@ -16,7 +16,7 @@
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I think you only need to render to a texture e.g. <a href="https://t.co/hVpNqk9DS7">https://t.co/hVpNqk9DS7</a><br>Once you have your framebuffer in a texture you can call ImGui::Image or ImDrawList::AddImage() functions.</p>&mdash; Omar (@ocornut) <a href="https://twitter.com/ocornut/status/1215995410206089216?ref_src=twsrc%5Etfw">January 11, 2020</a></blockquote>
 
-によれば、`ImGui::Image()` なり `ImDrawList::AddImage()` に OpenGL などのテクスチャを渡せば描いてくれるそうなので、Dear ImGui のサンプル [Image Loading and Displaying Examples](https://github.com/ocornut/imgui/wiki/Image-Loading-and-Displaying-Examples)に従って、フレームバッファオブジェクト (Frame Buffer Object, FBO) を使ってみようと思います。
+によれば、`ImGui::Image()` なり `ImDrawList::AddImage()` に OpenGL などのテクスチャを渡せば描いてくれるそうなので、Dear ImGui のサンプル [Image Loading and Displaying Examples](https://github.com/ocornut/imgui/wiki/Image-Loading-and-Displaying-Examples) に従って、フレームバッファオブジェクト (Frame Buffer Object, FBO) を使ってみようと思います。
 
 ### FBO を作る
 
